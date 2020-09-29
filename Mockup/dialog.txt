@@ -1,0 +1,28 @@
+DIALOG @Intro1
+
+#1 : Perso1
+	"Comment tu vas, héros ?"
+	"Ta chasse s'est bien passée ?"
+	#2
+
+#2 : Hero
+	<La chasse a été bonne.>
+	[Vous expliquez que la chasse a été particulièrement fructueuse.]
+	#3
+	<Rien de bien fou.>
+	[Le gibier se fait rare dans la région, et le manque se fait cruellement sentir.]
+	#4
+	<*Garder le silence*>
+	[Vous gardez le silence.]
+	#3
+
+#3 : Perso1
+	"En tout cas, n'oublie pas de passer voir mon père, il m'a chargé de te dire qu'il serait heureux de partager un thé avec toi"
+	"A plus tard !"
+	[Elle s'éloigne sans plus attendre.]
+	#END
+
+#4 : Perso1
+	"C'est bien notre problème à tous ! Plus ça va, et plus il faut prendre de risques pour manger à sa faim."
+	"Si ça continue, vivre ici ne sera bientôt plus possible..."
+	#3
